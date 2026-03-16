@@ -1,1 +1,1 @@
-echo 'R_LIBS_USER= /exports/eddie/scratch/ajonausk/my_projects/R-packages'
+R_LIBS_USER=/exports/eddie/scratch/ajonausk/my_projects/R-packages
