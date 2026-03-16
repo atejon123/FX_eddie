@@ -1,5 +1,6 @@
 library(tidyverse)
 .libPaths(c(Sys.getenv('R_LIBS_USER'), .libPaths()))
+library(HBMAP)
 # Load dataset
 data_initial <- read_rds("fx_rsc_sp_map1.rds") %>% 
   filter(Thalamus > 0)
