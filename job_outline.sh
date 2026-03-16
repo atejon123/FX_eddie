@@ -6,7 +6,7 @@
 #$ -pe sharedmem 1
 
 # Load R module
-module load R
+module load R/4.4
 
 # Run R script
 Rscript analysis.R
