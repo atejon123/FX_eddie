@@ -1,13 +1,12 @@
 library(tidyverse)
-
+.libPaths(c(Sys.getenv('R_LIBS_USER'), .libPaths()))
 # Load dataset
 data_initial <- read_rds("fx_rsc_sp_map1.rds") %>% 
   filter(Thalamus > 0)
 
 # Filter for specific brains
 data_filtered <- data_initial %>% 
-  filter(brain %in% c('six', 'nine', 'twelve', 'seven', 'ten', 'eleven'))%>% 
-  slice_sample(n = 1000)
+  filter(brain %in% c('six', 'nine', 'twelve', 'seven', 'ten', 'eleven'))
 
 # --- Extract Metadata ---
 # We extract these as vectors so they don't force the numeric data into character type
