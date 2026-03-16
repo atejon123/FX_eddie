@@ -4,7 +4,7 @@
 #$ -l h_rt=08:00:00 # Time limit (hh:mm:ss)
 #$ -l h_vmem=19G     # Memory required
 #$ -pe sharedmem 1
-
+source /etc/profile.d/modules.sh
 # Load R module
 module load R/4.4
 
